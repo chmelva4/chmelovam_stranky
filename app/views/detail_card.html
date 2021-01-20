@@ -1,0 +1,18 @@
+<div layout="row" layout-align="center">
+  <div layout="column" flex=95 flex-gt-md=60>
+    <md-card>
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline">{{title}}</span>
+        </md-card-title-text>
+         <md-card-title-media >
+           <div ng-transclude="detail-card-img"></div>
+        </md-card-title-media>
+      </md-card-title>
+      <img src="{{header}}" ng-show="header" />
+      <md-card-content>
+        <div ng-transclude="detail-card-content"></div>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>

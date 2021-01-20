@@ -1,0 +1,38 @@
+<detail-card title="'Odborné výcviky a vzdělání'">
+  <detail-card-img>
+    <img src="app/pics/education_pic.jpg" class="md-media-xl card-media"/>
+  </detail-card-img>
+  <detail-card-content>
+    <p>
+      Moje osobní prožitky, pracovní praxe a vzdělávání se dají přirovnat k cestě. Cesta vede strmě. Každý krok vyžaduje sílu, odvahu a statečnost. Uvědomuji si, že jsem se během cesty naučila každodenně vnímat krásu a radost. Dívám se pod nohy, ale jsou pro mne zároveň důležité pohledy na horizonty.
+    </p>
+    <h4>Vzdělání:</h4>
+    <md-list>
+      <md-list-item class="md-2-line" ng-repeat="item in education">
+        <img src="app/pics/edu_clipart.jpg"  class="md-avatar" hide-xs/>
+        <div class="md-list-item-text" layout="column">
+          <h3>{{item.name}}</h3>
+          <h4>
+            {{item.date}}
+          </h4>
+        </div>
+      </md-list-item>
+    </md-list>
+    <h4>Praxe:</h4>
+    <md-list>
+      <md-list-item class="md-3-line" ng-repeat="item in exp">
+        <img src="app/pics/exp_clipart.jpg"  class="md-avatar" hide/>
+        <div class="md-list-item-text" layout="column">
+          <h3>{{item.name}}</h3>
+          <h4>
+            {{item.date}}
+          </h4>
+          <p md-truncate>
+            {{item.desc}}
+            <md-tooltip>{{item.desc}}</md-tooltip>
+          </p>
+        </div>
+      </md-list-item>
+    </md-list>
+  </detail-card-content>
+</detail-card>

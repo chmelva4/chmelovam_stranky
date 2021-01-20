@@ -1,0 +1,68 @@
+.md-media-xxl {
+  width: 480px;
+  height: 480px;
+}
+.md-media-sm-4-3 {
+  width: 80px;
+  height: 60px;
+}
+.md-media-md-4-3 {
+  width: 112px;
+  height: 84px;
+}
+.md-media-lg-4-3 {
+  width: 152px;
+  height: 114px;
+}
+.md-media-xl-4-3 {
+  width: 240px;
+  height: 180px;
+}
+
+.md-media-sm-16-9 {
+  width: 80px;
+  height: 45px;
+}
+.md-media-md-16-9 {
+  width: 112px;
+  height: 63px;
+}
+.md-media-lg-16-9 {
+  width: 152px;
+  height: 85px;
+}
+.md-media-xl-16-9 {
+  width: 240px;
+  height: 135px;
+}
+.md-media-sm-3-2 {
+  width: 80px;
+  height: 53px;
+}
+.md-media-md-3-2 {
+  width: 112px;
+  height: 75px;
+}
+.md-media-lg-3-2 {
+  width: 152px;
+  height: 101px;
+}
+.md-media-xl-3-2 {
+  width: 240px;
+  height: 160px;
+}
+.shrink-to-fit {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top:0;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@media screen and (max-width: 425px) {
+  .md-media-xl-4-3 {
+    width:100%;
+    height:auto;
+  }
+}

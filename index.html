@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-app="chmelovam">
+  <head>
+    <meta charset="UTF-8">
+    <!-- <meta name="robots" content="noindex,nofollow"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title ng-bind="ngMeta.title"></title>
+    <meta name="description" content="{{ngMeta.description}}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="app/css/custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="node_modules/angular/angular.min.js"></script>
+    <base href="/">
+  </head>
+  <body>
+    <div layout="row" layout-fill ng-controller="navController">
+      <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4" hide-gt-sm>
+
+        <md-toolbar md-primary>
+          <h1 class="md-toolbar-tools">Menu</h1>
+        </md-toolbar>
+
+        <md-content layout-margin>
+          <div layout="column" layout-align="space-between center">
+            <md-button href="/" ng-click="toggleNav()">O mě</md-button>
+            <md-button href="/education" ng-click="toggleNav()">Odbornost</md-button>
+            <md-button href="/therapy" ng-click="toggleNav()">Terapie</md-button>
+            <md-button href="/coaching" ng-click="toggleNav()">Koučování</md-button>
+            <md-button href="/conditions" ng-click="toggleNav()">Podmínky</md-button>
+            <md-button href="/support" ng-click="toggleNav()">Podporuji</md-button>
+            <md-button href="/contact" ng-click="toggleNav()">Kontakt</md-button>
+          </div>
+        </md-content>
+
+      </md-sidenav>
+
+
+      <div layout=column layout-align="space-between" flex>
+        <header>
+          <md-toolbar md-primary>
+            <div class="md-toolbar-tools" layout="row" layout-align-gt-sm="space-between center" layout-align="start center">
+              <md-button class="md-icon-button" aria-label="Menu" hide-gt-sm ng-click="toggleNav()">
+                <md-icon md-svg-icon="app/icons/ic_menu_white_24px.svg"></md-icon>
+              </md-button>
+              <span layout="row">Martina Chmelová</span>
+              <div layout=row layout-align="right center" hide-xs hide-sm>
+                <md-button href="/">O mě</md-button>
+                <md-button href="/education">Odbornost</md-button>
+                <md-button href="/therapy">Terapie</md-button>
+                <md-button href="/coaching">Koučování</md-button>
+                <md-button href="/conditions">Podmínky</md-button>
+                <md-button href="/support">Podporuji</md-button>
+                <md-button href="/contact">Kontakt</md-button>
+              </div>
+            </div>
+          </md-toolbar>
+        </header>
+
+        <md-content flex>
+          <main ng-view flex></main>
+        </md-content>
+
+        <footer>
+          <md-toolbar md-primary>
+            <div layout="row" class="md-toolbar-tools">
+              <p class="md-caption">
+                Mgr. Martina Chmelová <br />
+                K lučinám 2464/11, Praha 3<br />
+              </p>
+              <div layout="row" layout-margin hide-xs>
+                <p class="md-caption">
+                  603317997 <br />
+                  <a href="mailto:martina.chmelova@alfabet.cz"> martina.chmelova@alfabet.cz</a><br />
+                </p>
+                <p class="md-caption">
+                  číslo účtu  2192428173/0800 <br />
+                  IČ 87567571<br />
+                </p>
+              </div>
+            </div>
+          </md-toolbar>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script src="node_modules/angular-route/angular-route.min.js"></script>
+  <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+  <script src="node_modules/angular-aria/angular-aria.min.js"></script>
+  <script src="node_modules/angular-material/angular-material.min.js"></script>
+  <script src="node_modules/angular-messages/angular-messages.min.js"></script>
+  <script src="node_modules/ng-meta/dist/ngMeta.min.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/controllers/nav_controller.js"></script>
+  <script src="app/controllers/education.js"></script>
+  <script src="app/directives/detail_card.js"></script>
+</html>
