@@ -10,6 +10,11 @@ angular.module("chmelovam").controller("educationConroller", function($scope) {
     { date: "2009-2010", name: "Gestalt přístup v osobním a pracovním prostředí (IVTG)"}
   ]
   $scope.exp = [
+    {
+      date: "2021-dosud",
+      name: "Sociální klinika",
+      desc: "členka správní rady"
+    },
     { date: "2000-dosud",
       name: "Alfa H.S., nezisková organizace",
       desc: "koučing, metodická a lektorská práce na vzdělávacích programech, poradenská a terapeutická podpora  v oblasti prevence syndromu vyhoření a upevnění  psychické stability dlouhodobě pečujících osob"
